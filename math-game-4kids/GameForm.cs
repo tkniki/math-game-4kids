@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using math_game_4kids.GameLogic;
 
 namespace math_game_4kids
 {
     public partial class GameForm : Form
     {
+        Game game;
         public GameForm()
         {
             InitializeComponent();
         }
+
     }
 }
