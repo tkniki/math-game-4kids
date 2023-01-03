@@ -15,6 +15,7 @@ namespace math_game_4kids.GameLogic
         public int PlayerScores { get; set; }
         public int RobotScores { get; set; }
         private Difficulty difficulty;
+        public Operation operation { get; set; }
 
         #endregion
 
@@ -30,33 +31,24 @@ namespace math_game_4kids.GameLogic
             switch (difficulty)
             {
                 case Difficulty.EASY:
+                    operation = new EasyOperation();
                     break;
                 case Difficulty.MEDIUM:
+                    operation = new MediumOperation();
                     break;
                 case Difficulty.HARD:
+                    operation = new HardOperation();
                     break;
                 default:
                     break;
             }
         }
-        private void showEasyOperation()
+        
+        public void PlayRound()
         {
-
-        }
-        private void showMediumOperation()
-        {
-
-        }
-        private void showHardOperation()
-        {
-
+            generateOperationByDifficulty();
         }
 
 
-
-    }
-    public enum Difficulty
-    {
-        EASY, MEDIUM, HARD
     }
 }

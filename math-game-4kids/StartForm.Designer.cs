@@ -49,6 +49,7 @@
             // 
             // buttonStart
             // 
+            this.buttonStart.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonStart.Location = new System.Drawing.Point(630, 378);
             this.buttonStart.Name = "buttonStart";
